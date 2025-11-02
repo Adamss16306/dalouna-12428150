@@ -64,6 +64,14 @@ ul li a {
     font-weight: bold;
     text-decoration: none;
     color: #2f6d6a;
+    transition: all 0.4s ease;
+}
+ul li :hover{
+    color: #e9e3db;
+    background-color: #173939;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 nav {
