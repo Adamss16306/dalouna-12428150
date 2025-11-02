@@ -47,6 +47,7 @@ html {
     justify-content: space-between;
     text-align: center;
     position: sticky;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .dalouna {
@@ -548,27 +549,35 @@ nav {
 }
 }
 /*now for mobiles screen*/
-@media screen and (max-width:700px ) and (min-width:0){
+@media screen and (max-width:768px ) and (min-width:0){
 /*all css about header*/
 
 .site-header {
+    height:47px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    align-items:center;
+    position: sticky;
 }
 .dalouna{
-    margin-right: 150px;
+    margin-left:15px;
+    font-size: 16px;
 }
 
 nav {
     margin-right: 55px;
     transition: all 0.3s;
 }
-ul li {
+ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+}
+
+ul li {
+    width:37px;
+    font-size: 10px;
+    display: block;
+    gap:10px;
+    transition: all 0.4s ease;
 }
 
 /*all css about hero section*/
@@ -630,6 +639,7 @@ ul li {
 
 .aboutUs ul li {
     font-size: 10px;
+    width:100px;
     transition: all 0.3s;
 }
 
